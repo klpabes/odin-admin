@@ -35,3 +35,26 @@ body {
     margin: 0;
     display: flex;
 }
+
+body {
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr;
+}
+
+.sidebar {
+    background-color: #1992d4;
+
+    grid-row: 1 / 3;
+}
+
+.main-con {
+    background-color: #e2e8f0;
+}
+
+.header-con {
+    background-color: #ffff;
+}
