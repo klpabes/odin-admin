@@ -3,6 +3,8 @@
 
 :root {
   line-height: 1.5;
+
+  --main-bg-color: #e2e8f0;
 }
 
 h1, h2, h3, h4, h5, figure, p, ol, ul {
@@ -97,5 +99,79 @@ body {
 }
 
 .header-con {
-    background-color: #ffff;
+  background-color: #ffff;
+  padding: 0 70px 0 40px;
+
+  display: flex;
+  flex-direction: column;
+
+  font-weight: bold;
+}
+
+.icons {
+  height: 40px;
+  width: 40px;
+}
+
+.header {
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 1.4rem;
+}
+
+.header > div {
+  display: flex;
+  gap: 20px;
+
+  align-items: center;
+}
+
+.header input {
+  background-color: var(--main-bg-color);
+  width: clamp(320px, 40vw, 50vw);
+
+  height: 2rem;
+
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+
+
+.nav {
+  flex-grow: 2;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav > div {
+  display: flex;
+  align-items: center;
+
+  gap:20px;
+}
+
+.nav img {
+  height: 80px;
+  width: 80px;
+}
+
+.nav h2 {
+  font-size: 1.8rem;
+}
+
+.nav button {
+  border-radius: 30px;
+  font-size: 1.5rem;
+
+  padding: 10px 30px;
+  border: none;
+  background-color: #1992d4;
+  color: #ffff;
+  font-weight: bold;
 }
